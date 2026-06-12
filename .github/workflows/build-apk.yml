@@ -50,7 +50,7 @@ jobs:
         working-directory: source/Legado_Max-beta-3.26.060522
         run: |
           chmod +x ./gradlew
-          ./gradlew --no-daemon :app:assembleAppRelease --stacktrace \
+          ./gradlew --no-daemon :app:assembleAppMaxRelease --stacktrace \
             -PRELEASE_STORE_FILE="$GITHUB_WORKSPACE/haoayou-release.jks" \
             -PRELEASE_STORE_PASSWORD=12345678 \
             -PRELEASE_KEY_ALIAS=haoayou \
